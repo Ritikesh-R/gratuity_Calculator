@@ -50,6 +50,7 @@ input[type="number"],
     input[type="range"] {
       float: right;
       margin-bottom: 10px;
+      margin-left: 10px;
     }
 
 
@@ -112,5 +113,22 @@ button:hover {
 
     #myRange, #myRange1 {
         width: 100%;
+    }
+}
+
+.container {
+    width: 90%; /* Adjusted width for mobile */
+    max-width: 500px; /* Maximum width */
+    margin: 0 auto; /* Center the container */
+    background-color: #d9dbdf;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Increase padding for better spacing on small screens */
     }
 }
