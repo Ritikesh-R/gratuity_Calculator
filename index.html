@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gratuity Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+  <h2 style="text-align: center; margin-top: 10px; margin-bottom: 40px;">Gratuity Calculator</h2>
+  
+    <p style="font-size: larger;">Monthly salary (Basic+DA) <input type="number" min="10000" max="10000000" value="10000" class="slider"
+        id="myRangeValue"></p><br><br>
+    <input type="range" min="10000" max="10000000" value="10000" class="slider" id="myRange"> <br><br>
+
+    <p style="font-size: larger;">Years of service <input type="number" min="5" max="80" value="5" class="slider1" id="myRange1Value"></p><br><br>
+    <input type="range" min="5" max="80" value="5" class="slider1" id="myRange1"> <br> <br>
+
+    <div class="center">
+      <button onclick="calculateGratuity()"><h5>Calculate</h5></button>
+    </div>
+    <br>
+    <div id="demo">
+      <h3><b>Total Gratuity payable: <br><br><span id="outputt"></span></b></h3>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
