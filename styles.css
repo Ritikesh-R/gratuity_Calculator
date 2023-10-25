@@ -9,7 +9,7 @@ body{
     margin-top: 90px;
 }
 .container{
-    width: 600px;
+    width: 500px;
     height: 500px;
     margin:  auto;
     background-color: #d9dbdf;
@@ -61,7 +61,7 @@ p{
 
 
 #myRange {
-    width: 550px;
+    width: 450px;
     height: 7px;
     margin-left: auto;
     margin-right: 20px;
@@ -70,7 +70,7 @@ p{
 
 
 #myRange1 {
-    width: 550px;
+    width: 450px;
     height: 7px;
     margin-left: auto;
     margin-right: 20px;
@@ -95,3 +95,22 @@ button:hover {
     opacity: 1;
 }
 
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    input[type="number"],
+    input[type="range"] {
+        width: 100%;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    #myRange, #myRange1 {
+        width: 100%;
+    }
+}
